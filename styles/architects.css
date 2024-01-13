@@ -99,27 +99,59 @@ main {
   font-weight: 700;
 }
 
+/* features styles */
+
+.features {
+  margin-top: 130px;
+  gap: 100px;
+  display: flex;
+}
+
+.features .section-title {
+  border-left: 5px;
+  padding-left: 21px;
+}
+
+.ten-years-badge {
+  border-radius: 8px;
+  background: #ff900e;
+  color: #FFF;
+  width: 342px;
+  padding: 40px;
+}
+
+
+.ten-years-badge h2 {
+  font-size: 4rem;
+}
+
+.feature-content .card {
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
 /* facts card styles */
 
-
-.facts-card-container{
-    display: flex;
-    justify-content: space-around;
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
 }
 
-.facts-card-container .card-title{
-    font-weight: 600;
-    font-size: 1.25rem;
-    margin-top: 5px;
+.facts-card-container .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 5px;
 }
 
-.facts-card-container .card-states{
-    font-size: 2.8rem;
-    color: #424242;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.facts-card-container .card-states {
+  font-size: 2.8rem;
+  color: #424242;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-
 
 .facts-card-container .card {
   border-radius: 8px;
@@ -130,20 +162,20 @@ main {
 
 /* sponsors styles */
 
-.sponsors{
-    text-align: center;
+.sponsors {
+  text-align: center;
 }
 
-.sponsors-img-container{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    gap: 40px;
-    align-items: center;
+.sponsors-img-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  gap: 40px;
+  align-items: center;
 }
 
-.sponsors-img-container img{
-    width: 165px;
+.sponsors-img-container img {
+  width: 165px;
 }
 
 /* responsive media queries */
@@ -153,7 +185,7 @@ main {
     padding: 20px;
   }
   nav,
-  .teams-container ,
+  .teams-container,
   .facts-card-container,
   .sponsors-img-container {
     flex-direction: column;
@@ -161,11 +193,12 @@ main {
   .teams-img-container {
     grid-template-columns: 1fr;
   }
-  .teams-content, .facts-card-container {
+  .teams-content,
+  .facts-card-container {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .facts-card-container{
+  .facts-card-container {
     gap: 20px;
   }
 }
@@ -176,8 +209,7 @@ main {
   }
   nav,
   .teams-container,
-  .sponsors-img-container
-  {
+  .sponsors-img-container {
     flex-direction: column;
   }
 }
